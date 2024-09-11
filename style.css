@@ -1,0 +1,121 @@
+* {
+  font-family: "Poppins", sans-serif;
+  color: rgba(216, 170, 17, 0.884);
+}
+
+body {
+  background-color: #202020;
+}
+
+.container {
+  position: relative;
+  top: 20px;
+  width: 50%;
+  min-height: 90vh;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+  transition: 0.3s;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.ansDisplay {
+  display: flex;
+  background-color: #0e0d0d;
+  width: 8rem;
+  height: 8rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.display,
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.display h1 {
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.updates {
+  display: flex;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.updates .sub {
+  width: 10rem;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #0e0d0d;
+}
+
+.updates span {
+  font-size: 1.1rem;
+}
+
+.btns {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.actions input {
+  width: 5rem;
+  height: 2rem;
+  font-size: 2.5rem;
+  text-align: center;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  outline: none;
+  background-color: #0e0d0d;
+}
+
+.actions p {
+  font-size: 0.8rem;
+  color: #858383;
+}
+
+.btns button {
+  background-color: #0e0d0d;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.2rem;
+  width: 6rem;
+  box-shadow: 0px 0px 5px #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.level {
+  margin-top: 1rem;
+  color: #afaeae;
+  width: 15rem;
+  height: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.score,
+.life,
+.highScore {
+  color: #858383;
+}
+
+.life {
+  color: red;
+}
