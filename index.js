@@ -15,10 +15,12 @@ const handleCheckGuess = () => {
   if (!guess) {
     document.querySelector(".level").textContent = "No number";
   } else if (guess > data) {
-    if (life === 1) {
-      document.querySelector(".level").textContent = "You Loose The Game";
+    if (life <= 1) {
+      document.querySelector(".level").textContent = "Game Over";
       life--;
       document.querySelector(".life").textContent = life;
+      document.querySelector(".container").style.boxShadow =
+        "0px 0px 20px #FF0000";
       document.querySelector(".check").style.display = "none";
       document.querySelector(".next").style.display = "block";
       document.querySelector(".next").textContent = "Play Again";
@@ -34,7 +36,7 @@ const handleCheckGuess = () => {
       document.querySelector(".life").textContent = life;
     }
   } else if (guess < data) {
-    if (life === 1) {
+    if (life <= 1) {
       document.querySelector(".level").textContent = "Game Over";
       life--;
       document.querySelector(".life").textContent = life;
